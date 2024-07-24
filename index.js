@@ -108,6 +108,7 @@ async function main() {
 
   // send to discord webhook if set and valid url
   if (discordWebhook && URL.canParse(discordWebhook)) {
+     log('debug', '\n----- DISCORD WEBHOOK STAR -----')
     await discordWebhookSend()
   }
 
